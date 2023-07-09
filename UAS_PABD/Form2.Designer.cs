@@ -38,13 +38,13 @@
             this.label9 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -142,13 +142,6 @@
             this.textBox2.Size = new System.Drawing.Size(280, 22);
             this.textBox2.TabIndex = 10;
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(284, 186);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(280, 22);
-            this.textBox3.TabIndex = 11;
-            // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(284, 226);
@@ -179,7 +172,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(30, 484);
+            this.button1.Location = new System.Drawing.Point(104, 484);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 34);
             this.button1.TabIndex = 16;
@@ -188,12 +181,19 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(172, 484);
+            this.button2.Location = new System.Drawing.Point(295, 484);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(136, 34);
             this.button2.TabIndex = 17;
-            this.button2.Text = "button2";
+            this.button2.Text = "Kembali";
             this.button2.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(284, 184);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(281, 22);
+            this.dateTimePicker1.TabIndex = 18;
             // 
             // Form2
             // 
@@ -201,13 +201,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label9);
@@ -239,12 +239,12 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
