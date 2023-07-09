@@ -59,6 +59,7 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.SuspendLayout();
@@ -314,11 +315,22 @@
             this.textBox7.Size = new System.Drawing.Size(170, 20);
             this.textBox7.TabIndex = 18;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(310, 37);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(213, 25);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "Data Siswa Terdaftar";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox6);
@@ -378,5 +390,6 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label10;
     }
 }
