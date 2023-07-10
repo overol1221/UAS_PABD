@@ -46,6 +46,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -206,12 +207,22 @@
             this.dataGridView1.Size = new System.Drawing.Size(355, 192);
             this.dataGridView1.TabIndex = 19;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(641, 346);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(106, 30);
+            this.button3.TabIndex = 20;
+            this.button3.Text = "Open";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button2);
@@ -260,5 +271,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button3;
     }
 }
