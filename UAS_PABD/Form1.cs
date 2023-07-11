@@ -13,7 +13,7 @@ namespace UAS_PABD
 {
     public partial class Form1 : Form
     {
-        private string stringConnection = "data source=MAD\\MADDOG12;database=pendaftaran_siswa2;User ID=sa; Password=fi1234"; private SqlConnection koneksi;
+        private string stringConnection = "data source=MAD\\MADDOG12;database=pendaftaran_siswa2;User ID=sa; Password=fiqi1234"; private SqlConnection koneksi;
         public Form1()
         {
             InitializeComponent();
