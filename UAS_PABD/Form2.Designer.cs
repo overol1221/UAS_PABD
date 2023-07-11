@@ -45,6 +45,7 @@
             this.txtkj = new System.Windows.Forms.TextBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.btnback = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -194,12 +195,22 @@
             this.btnback.Text = "Kembali";
             this.btnback.UseVisualStyleBackColor = true;
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(363, 271);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 17;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnback);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.txtkj);
@@ -245,5 +256,6 @@
         private System.Windows.Forms.TextBox txtkj;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Button btnback;
+        private System.Windows.Forms.Button btnAdd;
     }
 }
