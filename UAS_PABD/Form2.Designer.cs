@@ -59,7 +59,7 @@
             this.label1.Location = new System.Drawing.Point(440, 22);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 29);
+            this.label1.Size = new System.Drawing.Size(195, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Form Data Mahasiswa";
             // 
@@ -69,7 +69,7 @@
             this.label2.Location = new System.Drawing.Point(29, 109);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 20);
+            this.label2.Size = new System.Drawing.Size(29, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "NIS";
             // 
@@ -79,7 +79,7 @@
             this.label3.Location = new System.Drawing.Point(29, 149);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 20);
+            this.label3.Size = new System.Drawing.Size(115, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nama Mahasiswa";
             // 
@@ -89,7 +89,7 @@
             this.label4.Location = new System.Drawing.Point(29, 190);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(172, 20);
+            this.label4.Size = new System.Drawing.Size(140, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Tempat Tanggal Lahir";
             // 
@@ -99,7 +99,7 @@
             this.label5.Location = new System.Drawing.Point(29, 232);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(114, 20);
+            this.label5.Size = new System.Drawing.Size(90, 16);
             this.label5.TabIndex = 4;
             this.label5.Text = "Jenis Kelamin";
             // 
@@ -109,7 +109,7 @@
             this.label6.Location = new System.Drawing.Point(29, 274);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 20);
+            this.label6.Size = new System.Drawing.Size(49, 16);
             this.label6.TabIndex = 5;
             this.label6.Text = "Alamat";
             // 
@@ -119,7 +119,7 @@
             this.label8.Location = new System.Drawing.Point(29, 314);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(112, 20);
+            this.label8.Size = new System.Drawing.Size(89, 16);
             this.label8.TabIndex = 7;
             this.label8.Text = "Kode Jurusan";
             // 
@@ -129,50 +129,50 @@
             this.label9.Location = new System.Drawing.Point(29, 357);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(91, 20);
+            this.label9.Size = new System.Drawing.Size(51, 16);
             this.label9.TabIndex = 8;
-            this.label9.Text = "Nama Ortu";
+            this.label9.Text = "Agama";
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(285, 103);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 26);
+            this.textBox1.Size = new System.Drawing.Size(170, 22);
             this.textBox1.TabIndex = 9;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(284, 146);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(171, 26);
+            this.textBox2.Size = new System.Drawing.Size(171, 22);
             this.textBox2.TabIndex = 10;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(284, 226);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(171, 26);
+            this.textBox4.Size = new System.Drawing.Size(171, 22);
             this.textBox4.TabIndex = 12;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(284, 268);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(171, 26);
+            this.textBox5.Size = new System.Drawing.Size(171, 22);
             this.textBox5.TabIndex = 13;
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(284, 312);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(171, 26);
+            this.textBox6.Size = new System.Drawing.Size(171, 22);
             this.textBox6.TabIndex = 14;
             // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(284, 354);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(171, 26);
+            this.textBox7.Size = new System.Drawing.Size(171, 22);
             this.textBox7.TabIndex = 15;
             // 
             // button1
@@ -198,7 +198,7 @@
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(284, 184);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(171, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(171, 22);
             this.dateTimePicker1.TabIndex = 18;
             // 
             // dataGridView1
@@ -239,7 +239,7 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1067, 554);
