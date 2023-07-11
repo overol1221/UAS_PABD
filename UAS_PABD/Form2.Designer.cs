@@ -38,6 +38,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtnis = new System.Windows.Forms.TextBox();
             this.txtnamasiswa = new System.Windows.Forms.TextBox();
+            this.txttgllhr = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -134,12 +135,20 @@
             this.txtnamasiswa.Size = new System.Drawing.Size(117, 20);
             this.txtnamasiswa.TabIndex = 9;
             // 
+            // txttgllhr
+            // 
+            this.txttgllhr.Location = new System.Drawing.Point(178, 150);
+            this.txttgllhr.Name = "txttgllhr";
+            this.txttgllhr.Size = new System.Drawing.Size(117, 20);
+            this.txttgllhr.TabIndex = 10;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txttgllhr);
             this.Controls.Add(this.txtnamasiswa);
             this.Controls.Add(this.txtnis);
             this.Controls.Add(this.label8);
@@ -170,5 +179,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtnis;
         private System.Windows.Forms.TextBox txtnamasiswa;
+        private System.Windows.Forms.TextBox txttgllhr;
     }
 }
