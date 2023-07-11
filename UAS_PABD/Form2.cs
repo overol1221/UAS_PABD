@@ -116,6 +116,7 @@ namespace UAS_PABD
         }
         private void dataGridView1()
         {
+            koneksi = new SqlConnection(stringconnection);
             koneksi.Open();
             string str = "SELECT * FORM dbo.siswa_baru";
             SqlDataAdapter da = new SqlDataAdapter(str, koneksi);
