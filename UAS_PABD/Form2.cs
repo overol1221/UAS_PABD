@@ -21,6 +21,8 @@ namespace UAS_PABD
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'pendaftaran_siswa2DataSet.siswa_baru' table. You can move, or remove it, as needed.
+            this.siswa_baruTableAdapter.Fill(this.pendaftaran_siswa2DataSet.siswa_baru);
 
         }
 

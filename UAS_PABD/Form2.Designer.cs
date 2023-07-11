@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,7 +50,19 @@
             this.btnSimpan = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnOpen = new System.Windows.Forms.Button();
+            this.pendaftaran_siswa2DataSet = new UAS_PABD.pendaftaran_siswa2DataSet();
+            this.siswabaruBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.siswa_baruTableAdapter = new UAS_PABD.pendaftaran_siswa2DataSetTableAdapters.siswa_baruTableAdapter();
+            this.nisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namasiswaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tanggallahirDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.jeniskelaminDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.alamatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.agamaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kodejurusanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendaftaran_siswa2DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.siswabaruBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -198,7 +211,17 @@
             // 
             // dataGridView
             // 
+            this.dataGridView.AutoGenerateColumns = false;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nisDataGridViewTextBoxColumn,
+            this.namasiswaDataGridViewTextBoxColumn,
+            this.tanggallahirDataGridViewTextBoxColumn,
+            this.jeniskelaminDataGridViewTextBoxColumn,
+            this.alamatDataGridViewTextBoxColumn,
+            this.agamaDataGridViewTextBoxColumn,
+            this.kodejurusanDataGridViewTextBoxColumn});
+            this.dataGridView.DataSource = this.siswabaruBindingSource;
             this.dataGridView.Location = new System.Drawing.Point(449, 101);
             this.dataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView.Name = "dataGridView";
@@ -257,6 +280,76 @@
             this.btnOpen.Text = "Open";
             this.btnOpen.UseVisualStyleBackColor = true;
             // 
+            // pendaftaran_siswa2DataSet
+            // 
+            this.pendaftaran_siswa2DataSet.DataSetName = "pendaftaran_siswa2DataSet";
+            this.pendaftaran_siswa2DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // siswabaruBindingSource
+            // 
+            this.siswabaruBindingSource.DataMember = "siswa_baru";
+            this.siswabaruBindingSource.DataSource = this.pendaftaran_siswa2DataSet;
+            // 
+            // siswa_baruTableAdapter
+            // 
+            this.siswa_baruTableAdapter.ClearBeforeFill = true;
+            // 
+            // nisDataGridViewTextBoxColumn
+            // 
+            this.nisDataGridViewTextBoxColumn.DataPropertyName = "nis";
+            this.nisDataGridViewTextBoxColumn.HeaderText = "nis";
+            this.nisDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nisDataGridViewTextBoxColumn.Name = "nisDataGridViewTextBoxColumn";
+            this.nisDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // namasiswaDataGridViewTextBoxColumn
+            // 
+            this.namasiswaDataGridViewTextBoxColumn.DataPropertyName = "nama_siswa";
+            this.namasiswaDataGridViewTextBoxColumn.HeaderText = "nama_siswa";
+            this.namasiswaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.namasiswaDataGridViewTextBoxColumn.Name = "namasiswaDataGridViewTextBoxColumn";
+            this.namasiswaDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // tanggallahirDataGridViewTextBoxColumn
+            // 
+            this.tanggallahirDataGridViewTextBoxColumn.DataPropertyName = "tanggal_lahir";
+            this.tanggallahirDataGridViewTextBoxColumn.HeaderText = "tanggal_lahir";
+            this.tanggallahirDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tanggallahirDataGridViewTextBoxColumn.Name = "tanggallahirDataGridViewTextBoxColumn";
+            this.tanggallahirDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // jeniskelaminDataGridViewTextBoxColumn
+            // 
+            this.jeniskelaminDataGridViewTextBoxColumn.DataPropertyName = "jenis_kelamin";
+            this.jeniskelaminDataGridViewTextBoxColumn.HeaderText = "jenis_kelamin";
+            this.jeniskelaminDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.jeniskelaminDataGridViewTextBoxColumn.Name = "jeniskelaminDataGridViewTextBoxColumn";
+            this.jeniskelaminDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // alamatDataGridViewTextBoxColumn
+            // 
+            this.alamatDataGridViewTextBoxColumn.DataPropertyName = "alamat";
+            this.alamatDataGridViewTextBoxColumn.HeaderText = "alamat";
+            this.alamatDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.alamatDataGridViewTextBoxColumn.Name = "alamatDataGridViewTextBoxColumn";
+            this.alamatDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // agamaDataGridViewTextBoxColumn
+            // 
+            this.agamaDataGridViewTextBoxColumn.DataPropertyName = "agama";
+            this.agamaDataGridViewTextBoxColumn.HeaderText = "agama";
+            this.agamaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.agamaDataGridViewTextBoxColumn.Name = "agamaDataGridViewTextBoxColumn";
+            this.agamaDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // kodejurusanDataGridViewTextBoxColumn
+            // 
+            this.kodejurusanDataGridViewTextBoxColumn.DataPropertyName = "kode_jurusan";
+            this.kodejurusanDataGridViewTextBoxColumn.HeaderText = "kode_jurusan";
+            this.kodejurusanDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.kodejurusanDataGridViewTextBoxColumn.Name = "kodejurusanDataGridViewTextBoxColumn";
+            this.kodejurusanDataGridViewTextBoxColumn.Width = 125;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -289,6 +382,8 @@
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendaftaran_siswa2DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.siswabaruBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,5 +412,15 @@
         private System.Windows.Forms.Button btnSimpan;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnOpen;
+        private pendaftaran_siswa2DataSet pendaftaran_siswa2DataSet;
+        private System.Windows.Forms.BindingSource siswabaruBindingSource;
+        private pendaftaran_siswa2DataSetTableAdapters.siswa_baruTableAdapter siswa_baruTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nisDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn namasiswaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tanggallahirDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn jeniskelaminDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn alamatDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn agamaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kodejurusanDataGridViewTextBoxColumn;
     }
 }
