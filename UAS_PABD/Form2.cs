@@ -36,11 +36,12 @@ namespace UAS_PABD
         private void btnOpen_Click(object sender, EventArgs e)
         {
             dataGridView1();
-            btnOpen.Enabled = false;
+            btnOpen.Enabled = true;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+
             txtnis.Enabled = true;
             txtnamasiswa.Enabled = true;
             txttgllhr.Enabled = true;
@@ -48,9 +49,9 @@ namespace UAS_PABD
             txtalamat.Enabled = true;
             txtagama.Enabled = true;
             txtkj.Enabled = true;
-            btnSimpan.Enabled = true;
-            btnOpen.Enabled = true;
             btnAdd.Enabled = true;
+            btnOpen.Enabled = true;
+            btnSimpan.Enabled = true;
             btnClear.Enabled = true;
         }
 
@@ -118,15 +119,15 @@ namespace UAS_PABD
         {
             koneksi = new SqlConnection(stringconnection);
             koneksi.Open();
-            string str = "SELECT * FORM dbo.siswa_baru";
-            SqlDataAdapter da = new SqlDataAdapter(str, koneksi);
+            string query = "SELECT Nis,Namasiswa,Tgllhr,Jk,Alamat,Agama,Kj FROM dbo.siswa_baru";
+            SqlDataAdapter da = new SqlDataAdapter(query, koneksi);
             DataSet ds = new DataSet();
             da.Fill(ds);
             dataGridView.DataSource = ds.Tables[0];
             koneksi.Close();
         }
         private void refreshform()
-        {
+            {
             txtnis.Text = "";
             txtnamasiswa.Text = "";
             txttgllhr.Text = "";
@@ -134,10 +135,6 @@ namespace UAS_PABD
             txtalamat.Text = "";
             txtagama.Text = "";
             txtkj.Text = "";
-            btnAdd.Enabled = false;
-            btnOpen.Enabled = false;
-            btnSimpan.Enabled = false;
-            btnClear.Enabled = false;
         }
 
         private void btnback_Click(object sender, EventArgs e)
@@ -145,6 +142,11 @@ namespace UAS_PABD
             Form1 f1 = new Form1();
             f1.Show();
             this.Close();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            refreshform();
         }
     }
 }
