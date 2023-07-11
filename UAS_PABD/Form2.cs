@@ -13,7 +13,7 @@ namespace UAS_PABD
 {
     public partial class Form2 : Form
     {
-        private string stringConnection = "data source=MAD\\MADDOG12;database=pendaftaran_siswa2;User ID=sa; Password=fiqi1234"; private SqlConnection koneksi;
+        private string stringconnection = "data source=MAD\\MADDOG12;database=pendaftaran_siswa2;User ID=sa; Password=fiqi1234"; SqlConnection koneksi;
         public Form2()
         {
             InitializeComponent();
@@ -21,6 +21,8 @@ namespace UAS_PABD
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'pendaftaran_siswa2DataSet1.siswa_baru' table. You can move, or remove it, as needed.
+            this.siswa_baruTableAdapter1.Fill(this.pendaftaran_siswa2DataSet1.siswa_baru);
             // TODO: This line of code loads data into the 'pendaftaran_siswa2DataSet.siswa_baru' table. You can move, or remove it, as needed.
 
 
@@ -48,6 +50,7 @@ namespace UAS_PABD
             txtkj.Enabled = true;
             btnSimpan.Enabled = true;
             btnOpen.Enabled = true;
+            btnAdd.Enabled = true;
             btnClear.Enabled = true;
         }
 
@@ -87,10 +90,11 @@ namespace UAS_PABD
             }
             if (kj =="")
             {
-                MessageBox.Show("Masukkan jenis kelamin", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Masukkan kode kelas", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
+                koneksi = new SqlConnection(stringconnection);
                 koneksi.Open();
                 string str = "INSERT INTO siswa_baru(nis,namasiswa,tgllhr,jk,alamat,agama,kj) VALUES (@Nis,@Namasiswa,@Tgllhr,@Jk,@Alamat,@Agama,@Kj)";
                 SqlCommand cmd = new SqlCommand(str, koneksi);
@@ -113,8 +117,8 @@ namespace UAS_PABD
         private void dataGridView1()
         {
             koneksi.Open();
-            string query = "SELECT Nis, Namasiswa, Tgllhr, Jk, Alamat, Agama, Kj FORM dbo.siswa_baru";
-            SqlDataAdapter da = new SqlDataAdapter(query, koneksi);
+            string str = "SELECT * FORM dbo.siswa_baru";
+            SqlDataAdapter da = new SqlDataAdapter(str, koneksi);
             DataSet ds = new DataSet();
             da.Fill(ds);
             dataGridView.DataSource = ds.Tables[0];
@@ -133,6 +137,13 @@ namespace UAS_PABD
             btnOpen.Enabled = false;
             btnSimpan.Enabled = false;
             btnClear.Enabled = false;
+        }
+
+        private void btnback_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Close();
         }
     }
 }
