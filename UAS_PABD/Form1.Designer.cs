@@ -37,42 +37,47 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(293, 56);
+            this.label1.Location = new System.Drawing.Point(391, 69);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 25);
+            this.label1.Size = new System.Drawing.Size(242, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Pendaftaran Siswa";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnSiswa
             // 
-            this.btnSiswa.Location = new System.Drawing.Point(169, 244);
+            this.btnSiswa.Location = new System.Drawing.Point(225, 300);
+            this.btnSiswa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSiswa.Name = "btnSiswa";
-            this.btnSiswa.Size = new System.Drawing.Size(107, 45);
+            this.btnSiswa.Size = new System.Drawing.Size(143, 55);
             this.btnSiswa.TabIndex = 1;
             this.btnSiswa.Text = "Siswa";
             this.btnSiswa.UseVisualStyleBackColor = true;
             // 
             // btnAdmin
             // 
-            this.btnAdmin.Location = new System.Drawing.Point(490, 244);
+            this.btnAdmin.Location = new System.Drawing.Point(653, 300);
+            this.btnAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(115, 45);
+            this.btnAdmin.Size = new System.Drawing.Size(153, 55);
             this.btnAdmin.TabIndex = 2;
             this.btnAdmin.Text = "Admin";
             this.btnAdmin.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.btnAdmin);
             this.Controls.Add(this.btnSiswa);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
