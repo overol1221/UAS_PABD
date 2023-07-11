@@ -40,6 +40,7 @@
             this.txtnamasiswa = new System.Windows.Forms.TextBox();
             this.txttgllhr = new System.Windows.Forms.TextBox();
             this.txtjk = new System.Windows.Forms.TextBox();
+            this.txtalamat = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -150,12 +151,20 @@
             this.txtjk.Size = new System.Drawing.Size(117, 20);
             this.txtjk.TabIndex = 11;
             // 
+            // txtalamat
+            // 
+            this.txtalamat.Location = new System.Drawing.Point(178, 212);
+            this.txtalamat.Name = "txtalamat";
+            this.txtalamat.Size = new System.Drawing.Size(117, 20);
+            this.txtalamat.TabIndex = 12;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtalamat);
             this.Controls.Add(this.txtjk);
             this.Controls.Add(this.txttgllhr);
             this.Controls.Add(this.txtnamasiswa);
@@ -190,5 +199,6 @@
         private System.Windows.Forms.TextBox txtnamasiswa;
         private System.Windows.Forms.TextBox txttgllhr;
         private System.Windows.Forms.TextBox txtjk;
+        private System.Windows.Forms.TextBox txtalamat;
     }
 }
