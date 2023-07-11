@@ -44,6 +44,7 @@
             this.txtagama = new System.Windows.Forms.TextBox();
             this.txtkj = new System.Windows.Forms.TextBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.btnback = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -184,12 +185,22 @@
             this.dataGridView.Size = new System.Drawing.Size(410, 150);
             this.dataGridView.TabIndex = 15;
             // 
+            // btnback
+            // 
+            this.btnback.Location = new System.Drawing.Point(12, 406);
+            this.btnback.Name = "btnback";
+            this.btnback.Size = new System.Drawing.Size(75, 23);
+            this.btnback.TabIndex = 16;
+            this.btnback.Text = "Kembali";
+            this.btnback.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnback);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.txtkj);
             this.Controls.Add(this.txtagama);
@@ -233,5 +244,6 @@
         private System.Windows.Forms.TextBox txtagama;
         private System.Windows.Forms.TextBox txtkj;
         private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.Button btnback;
     }
 }
