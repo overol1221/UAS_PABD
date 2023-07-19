@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UAS_PABD
 {
-    public partial class Form3 : Form
+    public partial class Form4 : Form
     {
-        public Form3()
+        public Form4()
         {
             InitializeComponent();
         }
@@ -22,23 +22,6 @@ namespace UAS_PABD
             Form1 f1 = new Form1();
             f1.Show();
             this.Hide();
-        }
-
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnMasuk_Click(object sender, EventArgs e)
-        {
-            Form2 f2 = new Form2();
-            f2.Show();
-            this.Hide();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

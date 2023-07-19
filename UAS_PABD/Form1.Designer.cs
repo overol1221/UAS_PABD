@@ -31,54 +31,110 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnSiswa = new System.Windows.Forms.Button();
             this.btnAdmin = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnJurusan = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnKelas = new System.Windows.Forms.Button();
+            this.btnOrtu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(391, 69);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(118, 128);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 31);
+            this.label1.Size = new System.Drawing.Size(153, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Pendaftaran Siswa";
+            this.label1.Text = "Form Mahasiswa";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnSiswa
             // 
-            this.btnSiswa.Location = new System.Drawing.Point(225, 300);
-            this.btnSiswa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSiswa.Location = new System.Drawing.Point(136, 191);
             this.btnSiswa.Name = "btnSiswa";
-            this.btnSiswa.Size = new System.Drawing.Size(143, 55);
+            this.btnSiswa.Size = new System.Drawing.Size(107, 29);
             this.btnSiswa.TabIndex = 1;
-            this.btnSiswa.Text = "Siswa";
+            this.btnSiswa.Text = "Pendaftaran";
             this.btnSiswa.UseVisualStyleBackColor = true;
             this.btnSiswa.Click += new System.EventHandler(this.btnSiswa_Click);
             // 
             // btnAdmin
             // 
-            this.btnAdmin.Location = new System.Drawing.Point(653, 300);
-            this.btnAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdmin.Location = new System.Drawing.Point(513, 184);
             this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(153, 55);
+            this.btnAdmin.Size = new System.Drawing.Size(115, 29);
             this.btnAdmin.TabIndex = 2;
             this.btnAdmin.Text = "Admin";
             this.btnAdmin.UseVisualStyleBackColor = true;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(513, 128);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(115, 24);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Form Admin";
+            // 
+            // btnJurusan
+            // 
+            this.btnJurusan.Location = new System.Drawing.Point(136, 239);
+            this.btnJurusan.Name = "btnJurusan";
+            this.btnJurusan.Size = new System.Drawing.Size(107, 30);
+            this.btnJurusan.TabIndex = 4;
+            this.btnJurusan.Text = "Jurusan";
+            this.btnJurusan.UseVisualStyleBackColor = true;
+            this.btnJurusan.Click += new System.EventHandler(this.btnJurusan_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(210, 36);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(348, 25);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "PENERIMAAN MAHASISWA BARU";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // btnKelas
+            // 
+            this.btnKelas.Location = new System.Drawing.Point(136, 290);
+            this.btnKelas.Name = "btnKelas";
+            this.btnKelas.Size = new System.Drawing.Size(107, 29);
+            this.btnKelas.TabIndex = 6;
+            this.btnKelas.Text = "Kelas";
+            this.btnKelas.UseVisualStyleBackColor = true;
+            this.btnKelas.Click += new System.EventHandler(this.btnKelas_Click);
+            // 
+            // btnOrtu
+            // 
+            this.btnOrtu.Location = new System.Drawing.Point(136, 340);
+            this.btnOrtu.Name = "btnOrtu";
+            this.btnOrtu.Size = new System.Drawing.Size(107, 31);
+            this.btnOrtu.TabIndex = 7;
+            this.btnOrtu.Text = "Orang Tua";
+            this.btnOrtu.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.BackColor = System.Drawing.Color.LightGray;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnOrtu);
+            this.Controls.Add(this.btnKelas);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.btnJurusan);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnAdmin);
             this.Controls.Add(this.btnSiswa);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -90,5 +146,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSiswa;
         private System.Windows.Forms.Button btnAdmin;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnJurusan;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnKelas;
+        private System.Windows.Forms.Button btnOrtu;
     }
 }
