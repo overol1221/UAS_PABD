@@ -34,7 +34,7 @@
             this.txtkodekls = new System.Windows.Forms.TextBox();
             this.txtkj = new System.Windows.Forms.TextBox();
             this.btnBack = new System.Windows.Forms.Button();
-            this.btnDftr = new System.Windows.Forms.Button();
+            this.btnSubmit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -91,14 +91,14 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // btnDftr
+            // btnSubmit
             // 
-            this.btnDftr.Location = new System.Drawing.Point(260, 214);
-            this.btnDftr.Name = "btnDftr";
-            this.btnDftr.Size = new System.Drawing.Size(75, 23);
-            this.btnDftr.TabIndex = 6;
-            this.btnDftr.Text = "Daftar";
-            this.btnDftr.UseVisualStyleBackColor = true;
+            this.btnSubmit.Location = new System.Drawing.Point(260, 214);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmit.TabIndex = 6;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = true;
             // 
             // Form5
             // 
@@ -106,7 +106,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnDftr);
+            this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.txtkj);
             this.Controls.Add(this.txtkodekls);
@@ -128,6 +128,6 @@
         private System.Windows.Forms.TextBox txtkodekls;
         private System.Windows.Forms.TextBox txtkj;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Button btnDftr;
+        private System.Windows.Forms.Button btnSubmit;
     }
 }

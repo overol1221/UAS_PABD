@@ -118,6 +118,7 @@
             this.btnOrtu.TabIndex = 7;
             this.btnOrtu.Text = "Orang Tua";
             this.btnOrtu.UseVisualStyleBackColor = true;
+            this.btnOrtu.Click += new System.EventHandler(this.btnOrtu_Click);
             // 
             // Form1
             // 

@@ -52,22 +52,22 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(44, 119);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(47, 119);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(19, 17);
+            this.label2.Size = new System.Drawing.Size(18, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Id";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(44, 154);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(47, 154);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 17);
+            this.label3.Size = new System.Drawing.Size(47, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nama ";
             // 
@@ -89,7 +89,7 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(148, 204);
+            this.btnBack.Location = new System.Drawing.Point(148, 197);
             this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(74, 25);
@@ -100,7 +100,7 @@
             // 
             // btnMasuk
             // 
-            this.btnMasuk.Location = new System.Drawing.Point(227, 205);
+            this.btnMasuk.Location = new System.Drawing.Point(227, 198);
             this.btnMasuk.Name = "btnMasuk";
             this.btnMasuk.Size = new System.Drawing.Size(75, 23);
             this.btnMasuk.TabIndex = 6;
@@ -112,7 +112,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.Wheat;
             this.ClientSize = new System.Drawing.Size(742, 389);
             this.Controls.Add(this.btnMasuk);
             this.Controls.Add(this.btnBack);

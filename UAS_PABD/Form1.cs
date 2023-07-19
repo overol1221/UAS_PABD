@@ -62,5 +62,12 @@ namespace UAS_PABD
             f5.Show();
             this.Hide();
         }
+
+        private void btnOrtu_Click(object sender, EventArgs e)
+        {
+            Form6 f6 = new Form6();
+            f6.Show();
+            this.Hide();
+        }
     }
 }
