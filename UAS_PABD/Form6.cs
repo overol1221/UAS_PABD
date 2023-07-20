@@ -128,5 +128,10 @@ namespace UAS_PABD
                 MessageBox.Show("Upload the image first");
             }
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Data Telah Tersubmit!");
+        }
     }
 }

@@ -82,6 +82,11 @@
     <Compile Include="Form6.Designer.cs">
       <DependentUpon>Form6.cs</DependentUpon>
     </Compile>
+    <Compile Include="gridform4DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gridform4DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="pendaftaran_siswa2DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -121,6 +126,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="gridform4DataSet.xsc">
+      <DependentUpon>gridform4DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gridform4DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gridform4DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gridform4DataSet.xss">
+      <DependentUpon>gridform4DataSet.xsd</DependentUpon>
+    </None>
     <None Include="pendaftaran_siswa2DataSet.xsc">
       <DependentUpon>pendaftaran_siswa2DataSet.xsd</DependentUpon>
     </None>

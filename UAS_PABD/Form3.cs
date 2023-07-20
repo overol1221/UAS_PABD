@@ -31,6 +31,8 @@ namespace UAS_PABD
 
         private void btnMasuk_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Berhasil Login");
+
             Form2 f2 = new Form2();
             f2.Show();
             this.Hide();
