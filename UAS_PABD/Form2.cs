@@ -21,7 +21,7 @@ namespace UAS_PABD
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            EnableControls();
+           
 
 
         }
@@ -33,7 +33,7 @@ namespace UAS_PABD
 
         private void btnOpen_Click(object sender, EventArgs e)
         {
-            EnableControls();
+            
         }
 
         private void EnableControls(object sender, EventArgs e)
