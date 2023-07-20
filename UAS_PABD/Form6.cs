@@ -17,8 +17,9 @@ namespace UAS_PABD
     {
         Image CurImage;
         string curFileName;
-        string connectionString = "data source=ALDAYANDAY\\ALDAYANDAY; database=BLOB; MultipleActiveResultSets=True; User ID=Sa; Password=Unkown007";
+        string connectionString = "data source=ALDAYANDAY\\ALDAYANDAY; database=ortumhs; MultipleActiveResultSets=True; User ID=sa; Password=Unkown007";
         string savedImageName = "";
+        SqlConnection koneksi;
         public Form6()
         {
             InitializeComponent();
@@ -26,7 +27,8 @@ namespace UAS_PABD
 
         private void Form6_Load(object sender, EventArgs e)
         {
-
+            dataGridView();
+            DisableControls();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -131,7 +133,113 @@ namespace UAS_PABD
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Data Telah Tersubmit!");
+            string nik = txtnik.Text;
+            string nma = txtnama.Text;
+            string pkrjn = txtpkrjn.Text;
+
+            if (nik == "")
+            {
+                MessageBox.Show("Masukkan NIK", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (nma == "")
+            {
+                MessageBox.Show("Masukkan Nama", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (pkrjn == "")
+            {
+                MessageBox.Show("Masukkan Pekerjaan", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                koneksi = new SqlConnection(connectionString);
+                koneksi.Open();
+                string str = "INSERT INTO ortumhs (nik, nama, pekerjaan) VALUES (@NIK, @NAMA, @PK)";
+                SqlCommand cmd = new SqlCommand(str, koneksi);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.Add(new SqlParameter("@NIK", nik));
+                cmd.Parameters.Add(new SqlParameter("@NAMA", nma));
+                cmd.Parameters.Add(new SqlParameter("@PK", pkrjn));
+
+                cmd.ExecuteNonQuery();
+                koneksi.Close();
+                MessageBox.Show("Data Berhasil disimpan", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dataGridView();
+            }
+
+        }
+        private void dataGridView()
+        {
+            koneksi = new SqlConnection(connectionString);
+            koneksi.Open();
+            string query = "SELECT nik, nama, pekerjaan FROM ortumhs";
+            SqlDataAdapter da = new SqlDataAdapter(query, koneksi);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            dataGridView1.DataSource = ds.Tables[0];
+            koneksi.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                string selectedKodeJurusan = dataGridView1.SelectedRows[0].Cells["nik"].Value.ToString();
+                koneksi = new SqlConnection(connectionString);
+                koneksi.Open();
+                string str = "DELETE FROM ortumhs WHERE nik = @NIK";
+                SqlCommand cmd = new SqlCommand(str, koneksi);
+                cmd.Parameters.Add(new SqlParameter("@NIK", selectedKodeJurusan));
+
+                cmd.ExecuteNonQuery();
+                koneksi.Close();
+                MessageBox.Show("Data berhasil dihapus", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dataGridView();
+            }
+            else
+            {
+                MessageBox.Show("Pilih baris data yang ingin dihapus", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            EnableControls();
+        }
+
+        private void EnableControls()
+        {
+
+            btnSubmit.Enabled = true;
+            btnBack.Enabled = true;
+            btnDelete.Enabled = true;
+            button1.Enabled = true;
+            button2.Enabled = true;
+            button3.Enabled = true;
+            txtnama.Enabled = true;
+            txtnik.Enabled = true;
+            txtpkrjn.Enabled = true;
+            textBox1.Enabled = true;
+            dataGridView1.Enabled = true;
+        }
+
+        private void DisableControls()
+        {
+            btnSubmit.Enabled = false;
+            btnBack.Enabled = false;
+            btnDelete.Enabled = false;
+            button1.Enabled = false;
+            button2.Enabled = false;
+            button3.Enabled = false;
+            txtnama.Enabled = false;
+            txtnik.Enabled = false;
+            txtpkrjn.Enabled = false;
+            textBox1.Enabled = false;
+            dataGridView1.Enabled = false;
         }
     }
 }
