@@ -21,6 +21,8 @@ namespace UAS_PABD
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            EnableControls();
+
 
         }
 
@@ -31,15 +33,30 @@ namespace UAS_PABD
 
         private void btnOpen_Click(object sender, EventArgs e)
         {
-            dataGridView1();
-            btnOpen.Enabled = true;
+            EnableControls();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void EnableControls(object sender, EventArgs e)
         {
 
             txtnis.Enabled = true;
             txtnamasiswa.Enabled = true;
+            txttgllhr.Enabled = true;
+            txtjk.Enabled = true;
+            txtalamat.Enabled = true;
+            txtagama.Enabled = true;
+            txtkj.Enabled = true;
+            btnAdd.Enabled = true;
+            btnOpen.Enabled = true;
+            btnSimpan.Enabled = true;
+            btnClear.Enabled = true;
+        }
+
+        private void DisableControls(object sender, EventArgs e)
+        {
+
+            txtnis.Enabled = false;
+            txtnamasiswa.Enabled = false;
             txttgllhr.Enabled = true;
             txtjk.Enabled = true;
             txtalamat.Enabled = true;
@@ -111,17 +128,6 @@ namespace UAS_PABD
                 refreshform();
             }
         }
-        private void dataGridView1()
-        {
-            koneksi = new SqlConnection(stringconnection);
-            koneksi.Open();
-            string query = "SELECT Nis,Namasiswa,Tgllhr,Jk,Alamat,Agama,Kj FROM dbo.siswa_baru";
-            SqlDataAdapter da = new SqlDataAdapter(query, koneksi);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
-            dataGridView.DataSource = ds.Tables[0];
-            koneksi.Close();
-        }
         private void refreshform()
             {
             txtnis.Text = "";
@@ -140,9 +146,38 @@ namespace UAS_PABD
             this.Close();
         }
 
+        private void dataGridView1()
+        {
+            koneksi = new SqlConnection(stringconnection);
+            koneksi.Open();
+            string query = "SELECT Nis,Namasiswa,Tgllhr,Jk,Alamat,Agama,Kj FROM dbo.siswa_baru";
+            SqlDataAdapter da = new SqlDataAdapter(query, koneksi);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            dataGridView.DataSource = ds.Tables[0];
+            koneksi.Close();
+        }
+
         private void btnClear_Click(object sender, EventArgs e)
         {
-            refreshform();
+            if (dataGridView.SelectedRows.Count > 0)
+            {
+                string selectedKodeJurusan = dataGridView.SelectedRows[0].Cells["nis"].Value.ToString();
+                koneksi = new SqlConnection(stringconnection);
+                koneksi.Open();
+                string str = "DELETE FROM siswa_baru WHERE nis = @NIS";
+                SqlCommand cmd = new SqlCommand(str, koneksi);
+                cmd.Parameters.Add(new SqlParameter("@NIS", selectedKodeJurusan));
+
+                cmd.ExecuteNonQuery();
+                koneksi.Close();
+                MessageBox.Show("Data berhasil dihapus", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dataGridView1();
+            }
+            else
+            {
+                MessageBox.Show("Pilih baris data yang ingin dihapus", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

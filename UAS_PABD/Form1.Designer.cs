@@ -36,13 +36,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnKelas = new System.Windows.Forms.Button();
             this.btnOrtu = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(76, 107);
+            this.label1.Location = new System.Drawing.Point(153, 106);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 24);
             this.label1.TabIndex = 0;
@@ -51,7 +53,7 @@
             // 
             // btnSiswa
             // 
-            this.btnSiswa.Location = new System.Drawing.Point(94, 166);
+            this.btnSiswa.Location = new System.Drawing.Point(171, 165);
             this.btnSiswa.Name = "btnSiswa";
             this.btnSiswa.Size = new System.Drawing.Size(107, 33);
             this.btnSiswa.TabIndex = 1;
@@ -61,9 +63,9 @@
             // 
             // btnAdmin
             // 
-            this.btnAdmin.Location = new System.Drawing.Point(427, 161);
+            this.btnAdmin.Location = new System.Drawing.Point(323, 165);
             this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(115, 29);
+            this.btnAdmin.Size = new System.Drawing.Size(144, 33);
             this.btnAdmin.TabIndex = 2;
             this.btnAdmin.Text = "Admin";
             this.btnAdmin.UseVisualStyleBackColor = true;
@@ -73,7 +75,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(427, 106);
+            this.label2.Location = new System.Drawing.Point(337, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 24);
             this.label2.TabIndex = 3;
@@ -81,7 +83,7 @@
             // 
             // btnJurusan
             // 
-            this.btnJurusan.Location = new System.Drawing.Point(94, 218);
+            this.btnJurusan.Location = new System.Drawing.Point(171, 218);
             this.btnJurusan.Name = "btnJurusan";
             this.btnJurusan.Size = new System.Drawing.Size(107, 30);
             this.btnJurusan.TabIndex = 4;
@@ -102,7 +104,7 @@
             // 
             // btnKelas
             // 
-            this.btnKelas.Location = new System.Drawing.Point(94, 269);
+            this.btnKelas.Location = new System.Drawing.Point(171, 269);
             this.btnKelas.Name = "btnKelas";
             this.btnKelas.Size = new System.Drawing.Size(107, 29);
             this.btnKelas.TabIndex = 6;
@@ -112,7 +114,7 @@
             // 
             // btnOrtu
             // 
-            this.btnOrtu.Location = new System.Drawing.Point(94, 319);
+            this.btnOrtu.Location = new System.Drawing.Point(171, 318);
             this.btnOrtu.Name = "btnOrtu";
             this.btnOrtu.Size = new System.Drawing.Size(107, 31);
             this.btnOrtu.TabIndex = 7;
@@ -120,12 +122,23 @@
             this.btnOrtu.UseVisualStyleBackColor = true;
             this.btnOrtu.Click += new System.EventHandler(this.btnOrtu_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::UAS_PABD.Properties.Resources.UMY;
+            this.pictureBox1.Location = new System.Drawing.Point(323, 217);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(144, 132);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(637, 394);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnOrtu);
             this.Controls.Add(this.btnKelas);
             this.Controls.Add(this.label3);
@@ -137,6 +150,7 @@
             this.Name = "Form1";
             this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,5 +166,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnKelas;
         private System.Windows.Forms.Button btnOrtu;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
